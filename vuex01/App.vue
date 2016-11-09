@@ -27,7 +27,6 @@
 </template>
 
 <script>
-
 var store = require('./store')
 var getCount = require('./getters')
 import * as actions from './actions'

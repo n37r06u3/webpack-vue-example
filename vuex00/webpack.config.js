@@ -11,11 +11,16 @@ module.exports = {
                 loader: 'babel-loader',
                 query: {
                     presets: ['es2015']
-                }
+                },
+            },
+            {
+                test: /\.vue$/,
+                loader: 'vue'
             }
-        ],
-        resolve: {
-            extensions: ['', '.js']
-        },
+        ]
     },
-}
+    devtool: '#source-map',
+    resolve: {
+        extensions: ['', '.js']
+    },
+};
